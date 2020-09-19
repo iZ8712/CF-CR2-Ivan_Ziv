@@ -2,6 +2,36 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif; }
+  
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+   body {
+       background-color: deepskyblue;
+   }
+  
+  div .newstext {
+    font-size: 0.8em;
+    
+  }
+  
+  #data {
+    
+  color: red;
+  float: none;
+  display: none; /* somehow this line would not work in css. I searched the internet and tried a few other things,
+                  * but some lines would work, others would not with no plausible explanation I could find.
+                  * I think it is because sass. I also tried media queries in sass,
+                  * but there was a problem with the brackets and it would not accept lines,
+                  * instead I got Error warnings*/
+    
+  } 
+
+}
+
+@media screen and (min-width:1201px) {
+   
+   
+}
 
 #header {
   display: flex;
@@ -9,7 +39,7 @@
   align-items: center;
   width: 100%;
   height: 15vh;
-  background-color: red; }
+  background-color: #5B191A; }
 
 #navtop {
   width: 100%;
@@ -65,7 +95,6 @@ a:active {
   height: auto;
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
   padding-top: 3vh;
   padding-bottom: 3vh; }
 
@@ -74,7 +103,6 @@ a:active {
   height: 30vh;
   display: flex;
   flex-flow: column;
-  border: 1px solid black;
   align-items: center; }
 
 .newstext {
@@ -103,7 +131,7 @@ a:active {
 .img-to-fit img {
   flex-shrink: 0;
   max-width: 100%;
-  max-height: auto; }
+  max-height: 180%; }
 
 .banner {
   width: 80%;
@@ -115,7 +143,6 @@ a:active {
 .banner_banner {
   width: 100%;
   height: 10vh;
-  border: 1px solid black;
   display: flex;
   flex-flow: column;
   margin-left: 22%; }
@@ -133,7 +160,6 @@ a:active {
 .newscontent2 {
   width: 70%;
   height: 40vh;
-  border: 1px solid black;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -192,4 +218,4 @@ a:active {
   margin-left: 50%;
   margin-bottom: 2vh; }
 
-/*# sourceMappingURL=CF-CR02-Ivan_Ziv.css.map */
+
